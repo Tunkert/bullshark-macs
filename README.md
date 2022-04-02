@@ -5,6 +5,10 @@
 - Emacs (tested on 27.1)
 - Hermit font (free) can be downloaded [here](https://pcaro.es/p/hermit/).
 
+## Screenshots
+
+![A screenshot of Bullshark Emacs](~/.emacs.d/screenshots/screenshot-bullshark-emacs.png)
+
 ## Installation
 
 To install backup your .emacs.d directory or .emacs file, move to another directory or remove and then type the following into your terminal:
