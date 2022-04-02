@@ -1,5 +1,5 @@
 ;; packages to install
-(setq package-list '(material-theme markdown-mode evil js2-mode web-mode emmet-mode php-mode monokai-theme dashboard olivetti))
+(setq package-list '(material-theme markdown-mode evil js2-mode web-mode emmet-mode php-mode monokai-theme dashboard olivetti doom-modeline))
 
 ;; melpa repository
 (require 'package)
@@ -48,6 +48,16 @@
 ;; olivetti
 (require 'olivetti)
 
+;; doom mode-line
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+
+;; doom-mode-line settings
+(setq doom-modeline-enable-word-count t)
+(setq doom-modeline-modal-icon t)
+(setq doom-modeline-checker-simple-format t)
+(display-time-mode t)
+
 (dashboard-setup-startup-hook)
 (setq dashboard-banner-logo-title "Welcome to BullSharkMacs, an aggressive Emacs blogging platform!")
 (setq dashboard-startup-banner "~/.emacs.d/logos/bull-shark-logo.png")
@@ -65,3 +75,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+

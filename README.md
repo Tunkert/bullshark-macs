@@ -15,6 +15,14 @@ git clone https://github.com/Tunkert/bullshark-macs ~/.emacs.d
 
 After running that fire up Emacs - you might get some warnings ... (work in progress)
 
+To get the doom-modeline to work properly run the command:
+
+```
+all-the-icons-install-fonts
+```
+
+This will install the fonts necessary for the modeline.
+
 ## Packages Included
 
 Note: this is a work in progress, so far the packages included are:
@@ -23,10 +31,11 @@ Note: this is a work in progress, so far the packages included are:
 - evil
 - js2-mode
 - markdown-mode
-- material theme (default theme)
+- material theme (default theme is material light right now)
 - monokai theme (an alternative theme)
 - php mode
 - web mode
 - olivetti
 - dashboard
+- doom-modeline
 
