@@ -1,5 +1,5 @@
 ;; packages to install
-(setq package-list '(material-theme markdown-mode evil js2-mode web-mode emmet-mode php-mode monokai-theme))
+(setq package-list '(material-theme markdown-mode evil js2-mode web-mode emmet-mode php-mode monokai-theme dashboard olivetti))
 
 ;; melpa repository
 (require 'package)
@@ -41,3 +41,27 @@
 
 ;; disable scroll bar on startup
 (toggle-scroll-bar -1)
+
+;; dashboard
+(require 'dashboard)
+
+;; olivetti
+(require 'olivetti)
+
+(dashboard-setup-startup-hook)
+(setq dashboard-banner-logo-title "Welcome to BullSharkMacs, an aggressive Emacs blogging platform!")
+(setq dashboard-startup-banner "~/.emacs.d/logos/bull-shark-logo.png")
+(setq dashboard-center-content t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(dashboard web-mode php-mode monokai-theme material-theme markdown-mode js2-mode evil emmet-mode)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
