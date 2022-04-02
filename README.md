@@ -43,3 +43,7 @@ Note: this is a work in progress, so far the packages included are:
 - dashboard
 - doom-modeline
 
+## TODOS
+
+- setup package for Jekyll blogging
+- setup package for Hugo blogging
