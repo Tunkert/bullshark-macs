@@ -7,7 +7,7 @@
 
 ## Screenshots
 
-![A screenshot of Bullshark Emacs](~/.emacs.d/screenshots/screenshot-bullshark-emacs.png)
+![A screenshot of Bullshark Emacs](.emacs.d/screenshots/screenshot-bullshark-emacs.png)
 
 ## Installation
 
