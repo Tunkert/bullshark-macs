@@ -27,4 +27,6 @@ Note: this is a work in progress, so far the packages included are:
 - monokai theme (an alternative theme)
 - php mode
 - web mode
+- olivetti
+- dashboard
 

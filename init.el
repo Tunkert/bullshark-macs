@@ -37,7 +37,7 @@
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ;; load-theme
-(load-theme 'material t)
+(load-theme 'material-light t)
 
 ;; disable scroll bar on startup
 (toggle-scroll-bar -1)
