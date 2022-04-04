@@ -55,7 +55,7 @@
 (display-time-mode t)
 
 (dashboard-setup-startup-hook)
-(setq dashboard-banner-logo-title "Welcome to BullShark EMacs, an aggressive Emacs blogging platform!")
+(setq dashboard-banner-logo-title "Welcome to BullShark Emacs, an aggressive Emacs blogging platform!")
 (setq dashboard-startup-banner "~/.emacs.d/logos/bull-shark-logo.png")
 (setq dashboard-center-content t)
 (custom-set-variables

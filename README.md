@@ -1,5 +1,9 @@
 # README
 
+## Disclaimer
+
+This distribution is in early development. There is NO WARRANTY OF ANY KIND. USE AT YOUR OWN RISK!
+
 ## Requirements
 
 - Emacs (tested on 27.1)
@@ -34,7 +38,7 @@ Note: this is a work in progress, so far the packages included are:
 - emmet-mode
 - js2-mode
 - markdown-mode
-- doom themes (default theme is material light right now)
+- doom themes (default theme is doom-acario-light right now)
 - monokai theme (an alternative theme)
 - php mode
 - web mode
@@ -47,3 +51,7 @@ Note: this is a work in progress, so far the packages included are:
 
 - setup package for Jekyll blogging
 - setup package for Hugo blogging
+
+## Logo Attribution
+
+[https://unsplash.com/photos/Dza3q36PFSs](https://unsplash.com/photos/Dza3q36PFSs) - this is the photo from Unsplash I cropped for the logo.
