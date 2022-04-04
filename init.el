@@ -1,5 +1,5 @@
 ;; packages to install
-(setq package-list '(material-theme markdown-mode evil js2-mode web-mode emmet-mode php-mode monokai-theme dashboard olivetti doom-modeline))
+(setq package-list '(material-theme doom-themes markdown-mode js2-mode web-mode emmet-mode php-mode monokai-theme dashboard olivetti doom-modeline org2blog yasnippet))
 
 ;; melpa repository
 (require 'package)
@@ -17,10 +17,6 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-;; evil
-(require 'evil)
-(evil-mode 1)
-
 ;; web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
@@ -37,7 +33,7 @@
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ;; load-theme
-(load-theme 'material-light t)
+(load-theme 'doom-acario-light t)
 
 ;; disable scroll bar on startup
 (toggle-scroll-bar -1)
@@ -67,8 +63,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-export-backends '(ascii html icalendar latex md odt))
  '(package-selected-packages
-   '(dashboard web-mode php-mode monokai-theme material-theme markdown-mode js2-mode evil emmet-mode)))
+   '(yasnippet dashboard web-mode php-mode monokai-theme material-theme markdown-mode js2-mode emmet-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -76,3 +73,13 @@
  ;; If there is more than one, they won't work right.
  )
 
+(defun duplicate-line ()
+  "duplicate current line"
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line 1)
+  (yank 1)
+  (yank 1)
+  (previous-line 1))
+
+(global-set-key "\C-xx" 'duplicate-line)

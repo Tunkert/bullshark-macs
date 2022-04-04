@@ -32,16 +32,16 @@ This will install the fonts necessary for the modeline.
 Note: this is a work in progress, so far the packages included are:
 
 - emmet-mode
-- evil
 - js2-mode
 - markdown-mode
-- material theme (default theme is material light right now)
+- doom themes (default theme is material light right now)
 - monokai theme (an alternative theme)
 - php mode
 - web mode
 - olivetti
 - dashboard
 - doom-modeline
+- yasnippets
 
 ## TODOS
 

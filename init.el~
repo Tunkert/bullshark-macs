@@ -1,5 +1,5 @@
 ;; packages to install
-(setq package-list '(material-theme markdown-mode evil js2-mode web-mode emmet-mode php-mode monokai-theme))
+(setq package-list '(material-theme doom-themes markdown-mode js2-mode web-mode emmet-mode php-mode monokai-theme dashboard olivetti doom-modeline org2blog yasnippet))
 
 ;; melpa repository
 (require 'package)
@@ -17,10 +17,6 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-;; evil
-(require 'evil)
-(evil-mode 1)
-
 ;; web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
@@ -37,4 +33,52 @@
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ;; load-theme
-(load-theme 'material t)
+(load-theme 'doom-acario-light t)
+
+;; disable scroll bar on startup
+(toggle-scroll-bar -1)
+
+;; dashboard
+(require 'dashboard)
+
+;; olivetti
+(require 'olivetti)
+
+;; doom mode-line
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+
+;; doom-mode-line settings
+(setq doom-modeline-enable-word-count t)
+(setq doom-modeline-modal-icon t)
+(setq doom-modeline-checker-simple-format t)
+(display-time-mode t)
+
+(dashboard-setup-startup-hook)
+(setq dashboard-banner-logo-title "Welcome to BullShark EMacs, an aggressive Emacs blogging platform!")
+(setq dashboard-startup-banner "~/.emacs.d/logos/bull-shark-logo.png")
+(setq dashboard-center-content t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(yasnippet dashboard web-mode php-mode monokai-theme material-theme markdown-mode js2-mode emmet-mode)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(defun duplicate-line ()
+  "duplicate current line"
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line 1)
+  (yank 1)
+  (yank 1)
+  (previous-line 1))
+
+(global-set-key "\C-xx" 'duplicate-line)
