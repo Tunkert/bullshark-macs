@@ -1,3 +1,26 @@
+;; start the initial frame maximized
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+
+;; start every frame maximized
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;; inhibit splash screen
+(setq inhibit-splash-screen t)
+
+;; set default font and size
+(set-face-attribute 'default nil :font "Hermit-10" )
+
+;; disable menu on startup
+(menu-bar-mode -1)
+
+;; disable tools on startup
+(tool-bar-mode -1)
+
+
+;; line numbers
+(global-display-line-numbers-mode t)
+(setq display-line-numbers-type 'relative)
+
 ;; packages to install
 (setq package-list '(material-theme doom-themes markdown-mode js2-mode web-mode emmet-mode php-mode monokai-theme dashboard olivetti doom-modeline org2blog yasnippet))
 

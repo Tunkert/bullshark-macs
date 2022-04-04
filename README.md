@@ -6,8 +6,12 @@ This distribution is in early development. There is NO WARRANTY OF ANY KIND. USE
 
 ## Requirements
 
-- Emacs (tested on 27.1)
+- Emacs (tested on 27.1 / beginning testing on 26.2 - see notes below)
 - Hermit font (free) can be downloaded [here](https://pcaro.es/p/hermit/).
+
+## Testing on Emacs 26.2
+
+- For emacs 26.2 copy file contents of early-init.el to init.el at top of file to get emacs to startup maximized. Still testing on 26.2 ...
 
 ## Screenshots
 
